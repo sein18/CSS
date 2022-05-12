@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!-- 
+        static : 고정된 위치(원래 위치)
+        relative : 고정된 위치로 부터 이동
+        absolute : 조상(position설정이 된)을 기준으로 이동(최상위:body)
+        fixed : 
+     -->
+    <style>
+        #box{
+            width: 550px;
+            border: 1px dotted red;
+            position: relative;
+        }
+        p{
+            width: 130px;
+            height: 100px;
+        }
+        .myred{
+            background-color: red;
+            position: relative;
+            top:50px;
+            z-index: 1;
+        }
+        .myblue{
+            background-color: blue;
+            position: absolute; 
+            top: 30px;
+            left: 100px; 
+        }
+        .mygreen{
+            background-color: green;
+            position: relative;
+            left: 30px;
+            top: -30px
+        }
+        .myred:hover{
+            z-index: 100;
+        }
+        .myblue:hover{
+            z-index: 100;
+        }
+        .mygreen:hover{
+            z-index: 100;
+        }
+        #fixed{
+            width: 100px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            position: fixed;
+            right: 50px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p class="myred"></p>
+        <p class="myblue"></p>
+        <p class="mygreen"></p>
+    </div>
+    <div id="fixed">
+        fixed!!
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+</html>
