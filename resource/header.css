@@ -1,9 +1,11 @@
 .header{
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     border-bottom: 2px solid black;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 .header_wrapper{
     height: 50px;
@@ -17,10 +19,11 @@
 .header_menu{
     border: none;
     font-size: 1.5rem;
-    /* display: none; */
+    display: none;
 }
-.header_title{
+.header_title{ 
     font-size: 1.4rem;
+    margin-left: 10px; 
 }
 .header_center{
     width: 50%;
@@ -28,10 +31,48 @@
 .header_form{
     display: flex;
     max-width: 100%;
+    
 }
 .header_input_text{
-    width: 70%;
+    width: calc(100% - 70px);
+    height: 30px; 
+    border-right: none;  
 }
 .header_input_button{
-    width: 20%;
+    width: 70px;
+    border-left: none;
 }
+.header_right{
+    display: flex;
+    margin-right: 20px;
+}
+.header_search{
+    border: none;
+    background-color: transparent; /*투명*/
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+.header_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    /* background-image: url(../../1_html/image/img01.png);
+    background-size: 35px 35px; */ 
+}
+
+@media screen and (max-width:500px) {
+    .header_search{
+        display: block;
+    }
+    .header_menu{
+        display: block;
+    }
+    .header_center{
+        display: none;
+    }
+    .header_title{
+        display: none;
+    }
+} 
