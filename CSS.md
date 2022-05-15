@@ -153,4 +153,68 @@
   }
   ```
 
+---
+
+* __CSS 활용__
+
+  * background 이미지 삽입
+
+  ```CSS
+   h1{ /* 태그 선택*/
+              background-size: 300px;
+              background-image: url("../1_html/image/img02.png"); /* URL을 통해 이미지 삽입*/
+              background-repeat: no-repeat;
+              background-position: center;
+      }
+  ```
+
+  * `float, clear` (태그들을 나열해주는 방법)
+
+  ```css
+   #w01{  /*float을 통해 나열이 가능하며 clear를 적용한 css는 위에 float을 적용한 태그들을 냅두고 밑으로 내려온다.*/
+              float: right;
+              width: 200px;
+              padding: 15px;
+              background-color: lightgray;
+              
+   }
+   #w02{
+              /* float: left; */
+              clear: right; 
+              width: 200px;
+              padding: 15px;
+              background-color: pink;
+              
+   }
+   #w03{ 
+              /* clear: both; */
+              width: 200px;
+              padding: 15px;
+              background-color: aqua;
+   }
+  ```
+
+  * `display: inline-block `(태그들을 나열해주는 방법)
+
+  ```css
+     div{ /*블록형태의 태그들을 inline블록 형태로 변환 */
+              display: inline-block;  
+          }  
+  ```
+
+  *  `display: flex` (태그들을 나열해주는 방법)
+
+  ```css
+  /*width 크기에 맞게 일렬로 나열해주는 속성이다.ex)*/
+  .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-bottom: 2px solid black;
+      width: 100%;
+      z-index: 10;
+      background-color: white;
+  }
+  ```
+
   
